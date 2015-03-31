@@ -11,3 +11,4 @@ mquandalle:jade
 cryptoquick:stylus-multi
 iron:router
 grigio:babel
+coffeescript
