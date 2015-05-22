@@ -1,0 +1,101 @@
+basicLayout(padding, max-width)
+  .wrapper
+    position relative
+    min-height 100%
+
+  main
+    padding padding
+    max-width max-width
+    margin 0 auto
+
+headerLayout(size, padding, max-width)
+  .wrapper
+    position relative
+    min-height 100%
+
+  header
+    width 100%
+    height size
+    padding 0 padding
+    position fixed
+
+  main
+    padding size+padding padding padding
+    max-width max-width
+    margin 0 auto
+
+footerLayout(size, padding, max-width)
+  .wrapper
+    position relative
+    min-height 100%
+
+  main
+    padding padding padding size+padding
+    max-width max-width
+    margin 0 auto
+
+  footer
+    position absolute
+    bottom 0
+    width 100%
+    height size
+
+fixedFooterLayout(size, padding, max-width)
+  .wrapper
+    position relative
+    min-height 100%
+
+  main
+    padding padding padding size+padding
+    max-width max-width
+    margin 0 auto
+
+  footer
+    position fixed
+    bottom 0
+    width 100%
+    height size
+
+headerFooterLayout(header-size, footer-size, padding, max-width)
+  .wrapper
+    position relative
+    min-height 100%
+
+  header
+    width 100%
+    height header-size
+    padding 0 padding
+    position fixed
+
+  main
+    padding header-size+padding padding footer-size+padding
+    max-width max-width
+    margin 0 auto
+
+  footer
+    position absolute
+    bottom 0
+    width 100%
+    height footer-size
+
+headerFixedFooterLayout(header-size, footer-size, padding, max-width)
+  .wrapper
+    position relative
+    min-height 100%
+
+  header
+    width 100%
+    height header-size
+    padding 0 padding
+    position fixed
+
+  main
+    padding header-size+padding padding footer-size+padding
+    max-width max-width
+    margin 0 auto
+
+  footer
+    position fixed
+    bottom 0
+    width 100%
+    height footer-size
